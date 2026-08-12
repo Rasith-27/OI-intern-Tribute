@@ -1,0 +1,248 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" width="100%" height="100%">
+  <defs>
+    <!-- Background Space Void & Ambient Glow -->
+    <radialGradient id="spaceVoid" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#020512" />
+      <stop offset="70%" stop-color="#000000" />
+      <stop offset="100%" stop-color="#000000" />
+    </radialGradient>
+
+    <!-- Celestial Aura Glow Behind Silhouette -->
+    <radialGradient id="celestialAura" cx="50%" cy="45%" r="48%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.35" />
+      <stop offset="50%" stop-color="#818cf8" stop-opacity="0.15" />
+      <stop offset="100%" stop-color="#000000" stop-opacity="0" />
+    </radialGradient>
+
+    <!-- Soft Outer Rim Lighting Filter -->
+    <filter id="auraGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="10" result="blur" />
+      <feFlood flood-color="#38bdf8" flood-opacity="0.5" result="color" />
+      <feComposite in2="blur" operator="in" result="glow" />
+      <feMerge>
+        <feMergeNode in="glow" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+
+    <!-- Sketch Color Palettes -->
+    <linearGradient id="sepiaSkinLight" x1="20%" y1="0%" x2="80%" y2="100%">
+      <stop offset="0%" stop-color="#fbf4ec" />
+      <stop offset="35%" stop-color="#ebd0b5" />
+      <stop offset="70%" stop-color="#cda17c" />
+      <stop offset="100%" stop-color="#a3724c" />
+    </linearGradient>
+
+    <linearGradient id="sepiaSkinMid" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#e0bca0" />
+      <stop offset="50%" stop-color="#ba8c65" />
+      <stop offset="100%" stop-color="#82532d" />
+    </linearGradient>
+
+    <linearGradient id="sepiaSkinDark" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#7c4820" />
+      <stop offset="70%" stop-color="#542c0e" />
+      <stop offset="100%" stop-color="#2d1405" />
+    </linearGradient>
+
+    <linearGradient id="hairSilverFlow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="30%" stop-color="#f1f5f9" />
+      <stop offset="65%" stop-color="#cbd5e1" />
+      <stop offset="100%" stop-color="#64748b" />
+    </linearGradient>
+
+    <linearGradient id="hairSilverDark" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#94a3b8" />
+      <stop offset="50%" stop-color="#475569" />
+      <stop offset="100%" stop-color="#1e293b" />
+    </linearGradient>
+
+    <linearGradient id="collarLight" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f8fafc" />
+      <stop offset="60%" stop-color="#e0f2fe" />
+      <stop offset="100%" stop-color="#bae6fd" />
+    </linearGradient>
+
+    <!-- Crosshatch Patterns for Authentic Hand-Drawn Sketch Texture -->
+    <pattern id="hatchFine" width="5" height="5" patternTransform="rotate(45 0 0)" patternUnits="userSpaceOnUse">
+      <line x1="0" y1="0" x2="0" y2="5" stroke="#5c3413" stroke-width="0.75" opacity="0.4" />
+    </pattern>
+    <pattern id="hatchDense" width="4" height="4" patternTransform="rotate(-45 0 0)" patternUnits="userSpaceOnUse">
+      <line x1="0" y1="0" x2="0" y2="4" stroke="#3d1e08" stroke-width="0.9" opacity="0.5" />
+    </pattern>
+
+    <!-- Circular Clipping Path -->
+    <clipPath id="circleClip">
+      <circle cx="300" cy="300" r="290" />
+    </clipPath>
+  </defs>
+
+  <!-- Deep Space Canvas -->
+  <g clip-path="url(#circleClip)">
+    <rect width="600" height="600" fill="url(#spaceVoid)" />
+    <circle cx="300" cy="270" r="240" fill="url(#celestialAura)" />
+
+    <!-- Ambient Celestial Stardust -->
+    <circle cx="120" cy="140" r="1.5" fill="#ffffff" opacity="0.7" />
+    <circle cx="480" cy="110" r="2" fill="#38bdf8" opacity="0.8" />
+    <circle cx="490" cy="220" r="1.2" fill="#ffffff" opacity="0.6" />
+    <circle cx="100" cy="260" r="1.8" fill="#fbbf24" opacity="0.7" />
+    <circle cx="150" cy="420" r="1.2" fill="#ffffff" opacity="0.5" />
+    <circle cx="460" cy="400" r="1.5" fill="#38bdf8" opacity="0.6" />
+
+    <!-- ====================================================================
+         DR. A. P. J. ABDUL KALAM — ICONIC THINKING POSE SKETCH ARTWORK
+         ==================================================================== -->
+    <g filter="url(#auraGlow)" transform="translate(10, 5)">
+      
+      <!-- 1. BACK HAIR / HEAD MASS (SILVER-WHITE LOCKS) -->
+      <!-- Left side flowing hair mass -->
+      <path d="M 230 110 C 170 120, 140 180, 140 250 C 140 310, 160 360, 190 380 C 180 340, 175 280, 195 220 C 205 180, 230 140, 270 120 Z" fill="url(#hairSilverDark)" />
+      <!-- Right side flowing hair mass -->
+      <path d="M 370 110 C 430 130, 470 190, 465 270 C 460 340, 430 380, 395 390 C 420 350, 425 280, 405 220 C 395 180, 370 140, 330 120 Z" fill="url(#hairSilverDark)" />
+
+      <!-- 2. SHIRT & COLLAR (BOTTOM FOUNDATION) -->
+      <path d="M 170 470 L 235 400 L 275 460 L 310 540 L 150 550 Z" fill="url(#collarLight)" stroke="#94a3b8" stroke-width="1.5" />
+      <path d="M 235 400 L 285 440 L 275 460 Z" fill="#cbd5e1" />
+      <path d="M 150 490 L 180 440 L 235 400 L 260 480 L 140 560 Z" fill="#f1f5f9" stroke="#64748b" stroke-width="1" />
+      <!-- Subtle shirt crosshatch -->
+      <path d="M 150 490 L 180 440 L 235 400 L 260 480 L 140 560 Z" fill="url(#hatchFine)" opacity="0.3" />
+
+      <!-- 3. NECK & JAW BASE -->
+      <path d="M 230 350 C 240 380, 260 420, 280 440 C 300 420, 320 380, 330 350 Z" fill="url(#sepiaSkinDark)" />
+      <path d="M 230 350 C 250 380, 270 410, 285 430 C 295 400, 305 370, 315 350 Z" fill="url(#hatchDense)" opacity="0.6" />
+
+      <!-- 4. HEAD & FACE STRUCTURE -->
+      <!-- Main Face Base -->
+      <path d="M 225 180 C 220 250, 235 340, 285 365 C 335 340, 360 250, 355 180 C 350 130, 230 130, 225 180 Z" fill="url(#sepiaSkinLight)" />
+      
+      <!-- Face Contours & Sepia Shading (Cheekbones, Jawline, Temples) -->
+      <path d="M 225 200 C 225 270, 245 335, 285 365 C 270 330, 260 270, 260 210 Z" fill="url(#sepiaSkinMid)" opacity="0.7" />
+      <path d="M 355 200 C 350 270, 330 335, 285 365 C 300 330, 315 270, 315 210 Z" fill="url(#sepiaSkinMid)" opacity="0.5" />
+      <path d="M 225 200 C 225 270, 245 335, 285 365 C 270 330, 260 270, 260 210 Z" fill="url(#hatchFine)" opacity="0.4" />
+      
+      <!-- Forehead Highlights & Thinking Creases -->
+      <path d="M 245 160 C 275 150, 315 150, 340 160" stroke="#82532d" stroke-width="1.8" stroke-linecap="round" fill="none" opacity="0.65" />
+      <path d="M 240 175 C 275 165, 315 165, 345 175" stroke="#82532d" stroke-width="2" stroke-linecap="round" fill="none" opacity="0.7" />
+      <path d="M 250 190 C 280 182, 310 182, 338 190" stroke="#82532d" stroke-width="1.6" stroke-linecap="round" fill="none" opacity="0.6" />
+
+      <!-- 5. EYES (VISIONARY UPWARD GAZE) -->
+      <!-- Left Eye Orbit & Eyebrow (Silver-White with dark sketch accents) -->
+      <path d="M 240 215 C 255 205, 275 208, 285 218" stroke="#ffffff" stroke-width="4.5" stroke-linecap="round" fill="none" />
+      <path d="M 242 216 C 255 207, 273 210, 283 219" stroke="#64748b" stroke-width="2" stroke-linecap="round" fill="none" />
+      <!-- Left Eye Contour -->
+      <path d="M 246 230 C 256 220, 272 220, 280 230 C 272 238, 256 238, 246 230 Z" fill="#ffffff" stroke="#3f210d" stroke-width="1.5" />
+      <circle cx="266" cy="227" r="5.5" fill="#2d1405" />
+      <circle cx="268" cy="225" r="2" fill="#ffffff" /> <!-- Upward light reflection -->
+      <path d="M 242 226 C 248 220, 276 220, 284 226" stroke="#542c0e" stroke-width="2.5" stroke-linecap="round" fill="none" />
+      <!-- Left Eye Smile Wrinkles / Character Lines -->
+      <path d="M 242 234 C 238 238, 236 245, 235 250" stroke="#82532d" stroke-width="1.2" stroke-linecap="round" fill="none" opacity="0.75" />
+      <path d="M 284 232 C 290 236, 292 242, 290 248" stroke="#82532d" stroke-width="1.2" stroke-linecap="round" fill="none" opacity="0.6" />
+
+      <!-- Right Eye Orbit & Eyebrow -->
+      <path d="M 310 218 C 322 208, 342 205, 354 215" stroke="#ffffff" stroke-width="4.5" stroke-linecap="round" fill="none" />
+      <path d="M 312 219 C 322 210, 340 207, 352 216" stroke="#64748b" stroke-width="2" stroke-linecap="round" fill="none" />
+      <!-- Right Eye Contour -->
+      <path d="M 315 230 C 323 220, 339 220, 348 230 C 339 238, 323 238, 315 230 Z" fill="#ffffff" stroke="#3f210d" stroke-width="1.5" />
+      <circle cx="330" cy="227" r="5.5" fill="#2d1405" />
+      <circle cx="332" cy="225" r="2" fill="#ffffff" /> <!-- Upward light reflection -->
+      <path d="M 312 226 C 320 220, 346 220, 352 226" stroke="#542c0e" stroke-width="2.5" stroke-linecap="round" fill="none" />
+      <!-- Right Eye Smile Lines -->
+      <path d="M 350 232 C 356 236, 358 242, 357 248" stroke="#82532d" stroke-width="1.2" stroke-linecap="round" fill="none" opacity="0.75" />
+
+      <!-- Distinctive Kalam Mole (Upper Right Cheek) -->
+      <circle cx="340" cy="265" r="2.2" fill="#3f210d" />
+
+      <!-- 6. NOSE & CHARACTERISTIC PROFILE -->
+      <path d="M 293 218 L 291 270 C 285 278, 275 285, 270 286 C 267 286, 268 280, 273 277" stroke="#542c0e" stroke-width="1.8" fill="none" />
+      <path d="M 291 270 C 296 280, 305 285, 312 286 C 316 286, 315 280, 310 277" stroke="#542c0e" stroke-width="1.8" fill="none" />
+      <!-- Nose Tip & Bridge Shading -->
+      <path d="M 285 284 C 292 288, 298 288, 305 284" stroke="#3f210d" stroke-width="2.2" stroke-linecap="round" fill="none" />
+      <ellipse cx="282" cy="285" rx="3.5" ry="2" fill="#3f210d" />
+      <ellipse cx="308" cy="285" rx="3.5" ry="2" fill="#3f210d" />
+      <path d="M 288 240 C 285 260, 282 275, 278 282" stroke="#ba8c65" stroke-width="3" fill="none" opacity="0.6" />
+
+      <!-- 7. MOUTH & DIGNIFIED WARM SMILE -->
+      <!-- Philtrum -->
+      <path d="M 293 288 L 292 298" stroke="#82532d" stroke-width="1.2" />
+      <path d="M 297 288 L 296 298" stroke="#82532d" stroke-width="1.2" />
+      <!-- Upper Lip Line -->
+      <path d="M 268 308 C 282 304, 306 304, 322 308" stroke="#3f210d" stroke-width="2.5" stroke-linecap="round" fill="none" />
+      <!-- Smile Curves at Corners -->
+      <path d="M 268 308 C 264 305, 262 301, 264 297" stroke="#542c0e" stroke-width="1.8" stroke-linecap="round" fill="none" />
+      <path d="M 322 308 C 326 305, 328 301, 327 297" stroke="#542c0e" stroke-width="1.8" stroke-linecap="round" fill="none" />
+      <!-- Lower Lip Shadow -->
+      <path d="M 276 318 C 288 323, 302 323, 314 318" stroke="#542c0e" stroke-width="2.2" stroke-linecap="round" fill="none" opacity="0.8" />
+      <!-- Chin Crease & Hand Support Indentation -->
+      <path d="M 280 334 C 290 337, 300 337, 310 334" stroke="#82532d" stroke-width="1.8" stroke-linecap="round" fill="none" opacity="0.7" />
+
+      <!-- 8. THE ICONIC HAND & FINGERS IN THINKING POSE -->
+      <!-- Hand Base & Wrist -->
+      <g stroke="#3f210d" stroke-linecap="round" stroke-linejoin="round">
+        <!-- Index Finger Resting Along Right Cheekbone -->
+        <path d="M 352 265 C 356 280, 356 305, 352 335 C 348 355, 335 375, 315 385" fill="url(#sepiaSkinLight)" stroke-width="2.2" />
+        <path d="M 352 265 C 358 260, 366 265, 364 278 C 362 305, 360 330, 354 350" fill="url(#sepiaSkinMid)" stroke-width="2" opacity="0.8" />
+        <path d="M 352 265 C 358 260, 366 265, 364 278 C 362 305, 360 330, 354 350" fill="url(#hatchFine)" opacity="0.4" />
+        
+        <!-- Finger Knuckle Details & Creases -->
+        <path d="M 356 285 C 360 288, 362 294, 360 298" stroke="#542c0e" stroke-width="1.4" fill="none" />
+        <path d="M 354 315 C 358 318, 360 324, 357 328" stroke="#542c0e" stroke-width="1.4" fill="none" />
+
+        <!-- Middle Finger Curled Under Chin -->
+        <path d="M 280 345 C 300 342, 325 345, 340 355 C 345 365, 338 375, 320 378 C 300 380, 280 365, 280 345 Z" fill="url(#sepiaSkinLight)" stroke-width="2" />
+        <path d="M 295 348 C 310 346, 328 348, 335 358" stroke="#82532d" stroke-width="1.4" fill="none" />
+        
+        <!-- Ring & Pinky Fingers Curled Below -->
+        <path d="M 285 368 C 305 366, 325 370, 335 382 C 338 392, 328 400, 310 402 C 292 402, 280 388, 285 368 Z" fill="url(#sepiaSkinMid)" stroke-width="2" />
+        <path d="M 292 390 C 310 390, 325 395, 330 408 C 332 418, 320 425, 305 425 C 290 425, 285 410, 292 390 Z" fill="url(#sepiaSkinDark)" stroke-width="1.8" />
+        
+        <!-- Palm, Thumb & Wrist Shading -->
+        <path d="M 315 385 C 345 400, 370 435, 385 480 L 340 510 C 325 465, 305 435, 285 410 Z" fill="url(#sepiaSkinMid)" stroke-width="2" />
+        <path d="M 315 385 C 345 400, 370 435, 385 480 L 340 510 C 325 465, 305 435, 285 410 Z" fill="url(#hatchDense)" opacity="0.45" />
+      </g>
+
+      <!-- 9. ICONIC SILVER HAIR (DETAILED STRANDS & VOLUME) -->
+      <!-- Center Hair Part Line -->
+      <path d="M 285 105 C 287 130, 288 150, 288 170" stroke="#cbd5e1" stroke-width="2.5" stroke-linecap="round" fill="none" opacity="0.8" />
+      
+      <!-- Left Hair Flow Strands (Sweeping Over Ear) -->
+      <g fill="none" stroke-linecap="round">
+        <!-- Silver-White Highlight Strands -->
+        <path d="M 285 108 C 240 115, 195 145, 175 190 C 160 230, 160 280, 180 320" stroke="url(#hairSilverFlow)" stroke-width="6" />
+        <path d="M 283 115 C 245 125, 210 155, 190 200 C 175 240, 175 285, 195 330" stroke="#ffffff" stroke-width="3" />
+        <path d="M 285 125 C 255 138, 225 168, 205 210 C 190 250, 190 290, 210 335" stroke="#f1f5f9" stroke-width="2.5" />
+        <path d="M 287 135 C 265 148, 240 178, 225 218 C 215 248, 215 280, 228 315" stroke="#e2e8f0" stroke-width="2" />
+        <!-- Fine Pencil Crosshatch in Hair Shadows -->
+        <path d="M 175 190 C 160 230, 160 280, 180 320 L 205 320 C 190 280, 190 230, 205 190 Z" fill="url(#hatchDense)" opacity="0.35" />
+        <!-- Individual Hair Wisps -->
+        <path d="M 180 170 C 165 195, 155 230, 158 265 C 160 295, 175 330, 190 350" stroke="#cbd5e1" stroke-width="1.8" />
+        <path d="M 170 210 C 158 235, 155 265, 160 295" stroke="#ffffff" stroke-width="1.2" />
+        <path d="M 195 330 C 185 350, 178 375, 185 390" stroke="#94a3b8" stroke-width="2" />
+      </g>
+
+      <!-- Right Hair Flow Strands (Sweeping Over Right Temple & Ear) -->
+      <g fill="none" stroke-linecap="round">
+        <!-- Silver-White Highlight Strands -->
+        <path d="M 288 108 C 335 115, 385 145, 410 190 C 425 230, 428 280, 415 325" stroke="url(#hairSilverFlow)" stroke-width="6" />
+        <path d="M 290 115 C 332 125, 375 155, 398 200 C 412 240, 415 285, 400 330" stroke="#ffffff" stroke-width="3" />
+        <path d="M 288 125 C 322 138, 360 168, 380 210 C 395 250, 395 290, 385 335" stroke="#f1f5f9" stroke-width="2.5" />
+        <path d="M 287 135 C 315 148, 345 178, 360 218 C 370 248, 370 280, 362 315" stroke="#e2e8f0" stroke-width="2" />
+        <!-- Fine Pencil Crosshatch in Hair Shadows -->
+        <path d="M 410 190 C 425 230, 428 280, 415 325 L 390 325 C 405 280, 405 230, 390 190 Z" fill="url(#hatchDense)" opacity="0.35" />
+        <!-- Individual Hair Wisps -->
+        <path d="M 405 170 C 420 195, 430 230, 428 265 C 425 295, 412 330, 398 350" stroke="#cbd5e1" stroke-width="1.8" />
+        <path d="M 415 210 C 428 235, 430 265, 425 295" stroke="#ffffff" stroke-width="1.2" />
+        <path d="M 398 330 C 408 350, 415 375, 410 390" stroke="#94a3b8" stroke-width="2" />
+      </g>
+
+      <!-- 10. CELESTIAL GLOW EDGE HIGHLIGHT ON SILHOUETTE -->
+      <path d="M 160 230 C 150 280, 165 340, 190 380" stroke="#38bdf8" stroke-width="1.5" fill="none" opacity="0.6" />
+      <path d="M 425 230 C 435 280, 420 340, 395 380" stroke="#38bdf8" stroke-width="1.5" fill="none" opacity="0.6" />
+      <path d="M 230 110 C 260 102, 315 102, 345 110" stroke="#38bdf8" stroke-width="1.5" fill="none" opacity="0.5" />
+    </g>
+
+    <!-- Circular Framing Ring Subtle Border -->
+    <circle cx="300" cy="300" r="288" fill="none" stroke="rgba(56, 189, 248, 0.4)" stroke-width="3" />
+  </g>
+</svg>
